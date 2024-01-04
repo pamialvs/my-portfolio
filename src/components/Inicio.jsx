@@ -158,6 +158,7 @@ const Inicio = () => {
         </figure>
       </section>
       </InicioContainer >
+
     );
 };
 
