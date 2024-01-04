@@ -120,7 +120,7 @@ const Projetos = () => {
       <ProjetoCard>
         <ProjetoTitulo>LaPizza</ProjetoTitulo>
         <ProjetoDescricao>Projeto praticando useState em React, desenvolvido por mim durante o curso do Vai na Web. Feito com carinho, aprendizado e alguns bytes de código. Clica aí e bora pedir uma pizza com a gente! 🚀🍕</ProjetoDescricao>
-        <iframe title="LaPizza" src="https://3d5373e5-4645-4bbd-8d76-e2c311a97b40-00-2px2ryiz3urx9.spock.replit.dev//"  
+        <iframe title="LaPizza" src="https://73fyj2-5173.csb.app/"  
         style={{
           width: "100%",
           height: "20vh",
@@ -130,7 +130,7 @@ const Projetos = () => {
           marginTop: "2rem",
         }}> 
         </iframe>
-        <a href="https://3d5373e5-4645-4bbd-8d76-e2c311a97b40-00-2px2ryiz3urx9.spock.replit.dev/" target="_blank"><Button> Ver Projeto
+        <a href="https://73fyj2-5173.csb.app/" target="_blank"><Button> Ver Projeto
         </Button></a>
       </ProjetoCard>
 
