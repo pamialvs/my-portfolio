@@ -13,14 +13,13 @@ const ProjetosContainer = styled.div`
     rgba(0, 212, 255, 1) 100%
   );
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 `;
 
 const Titulo = styled.h1`
   color: black;
   font-size: 5rem;
   margin-bottom: 20px;
-  
 `;
 
 const ProjetosGrid = styled.div`
@@ -31,10 +30,10 @@ const ProjetosGrid = styled.div`
 
 const ProjetoCard = styled.div`
   width: 300px;
-  height: 30rem;
+  height: 20rem;
   padding: 20px;
   margin: 30px;
-  background-color: #1B1B3A;
+  background-color: #1b1b3a;
   border-radius: 10px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
@@ -68,7 +67,7 @@ const Button = styled.button`
   position: relative;
   border: none;
   font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   width: 10em;
   height: 2.3em;
@@ -87,7 +86,7 @@ const Button = styled.button`
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -5px;
     left: -5px;
@@ -109,96 +108,132 @@ const Button = styled.button`
   }
 `;
 
-
-
 const Projetos = () => {
   return (
     <>
-    <ProjetosContainer>
-    <Titulo>Meus Projetos</Titulo>
-    <ProjetosGrid>
-      <ProjetoCard>
-        <ProjetoTitulo>LaPizza</ProjetoTitulo>
-        <ProjetoDescricao>Projeto praticando useState em React, desenvolvido por mim durante o curso do Vai na Web. Feito com carinho, aprendizado e alguns bytes de código. Clica aí e bora pedir uma pizza com a gente! 🚀🍕</ProjetoDescricao>
-        <iframe title="LaPizza" src="https://73fyj2-5173.csb.app/"  
-        style={{
-          width: "100%",
-          height: "20vh",
-          border: "none",
-          borderRadius: "15px",
-          backgroundColor: "white", 
-          marginTop: "2rem",
-        }}> 
-        </iframe>
-        <a href="https://73fyj2-5173.csb.app/" target="_blank"><Button> Ver Projeto
-        </Button></a>
-      </ProjetoCard>
+      <ProjetosContainer>
+        <Titulo>Meus Projetos</Titulo>
+        <ProjetosGrid>
+          <ProjetoCard>
+            <ProjetoTitulo>LaPizza</ProjetoTitulo>
+            <ProjetoDescricao>
+              Projeto praticando useState em React, desenvolvido por mim durante
+              o curso do Vai na Web. Feito com carinho, aprendizado e alguns
+              bytes de código. Clica aí e bora pedir uma pizza com a gente! 🚀🍕
+            </ProjetoDescricao>
+            {/* <iframe
+              title="LaPizza"
+              src="https://github.com/pamialvs/LaPizza.git"
+              style={{
+                width: "100%",
+                height: "20vh",
+                border: "none",
+                borderRadius: "15px",
+                backgroundColor: "white",
+                marginTop: "2rem",
+              }}
+            ></iframe> */}
+            <a href="https://github.com/pamialvs/LaPizza.git" target="_blank">
+              <Button> Ver Projeto</Button>
+            </a>
+          </ProjetoCard>
 
-      <ProjetoCard>
-        <ProjetoTitulo>Calculadora Online Estilo iPhone 📱</ProjetoTitulo>
-        <ProjetoDescricao> A iCalculator, é tipo uma cópia da calculadora do iPhone. Sabe aquela que você já tá acostumado(a)? Então, é bem parecida! Desenvolvida por mim durante o curso do Vai na Web!</ProjetoDescricao>
-        <iframe title="Calculadora" src="https://calculadora-ios-online.netlify.app/"  
-        style={{
-          width: "100%",
-          height: "20vh",
-          border: "none",
-          borderRadius: "15px",
-          marginTop: "1rem",
-        }}> 
-        </iframe>
-        <a href="https://calculadora-ios-online.netlify.app/" target="_blank"><Button> Ver Projeto
-        </Button></a>
-      </ProjetoCard>
+          <ProjetoCard>
+            <ProjetoTitulo>Calculadora Online Estilo iPhone 📱</ProjetoTitulo>
+            <ProjetoDescricao>
+              {" "}
+              A iCalculator, é tipo uma cópia da calculadora do iPhone. Sabe
+              aquela que você já tá acostumado(a)? Então, é bem parecida!
+              Desenvolvida por mim durante o curso do Vai na Web!
+            </ProjetoDescricao>
+            {/* <iframe
+              title="Calculadora"
+              src="https://calculadora-ios-online.netlify.app/"
+              style={{
+                width: "100%",
+                height: "20vh",
+                border: "none",
+                borderRadius: "15px",
+                marginTop: "1rem",
+              }}
+            ></iframe> */}
+            <a
+              href="https://calculadora-ios-online.netlify.app/"
+              target="_blank"
+            >
+              <Button> Ver Projeto</Button>
+            </a>
+          </ProjetoCard>
 
-      <ProjetoCard>
-        <ProjetoTitulo>Inverno</ProjetoTitulo>
-        <ProjetoDescricao>Dê uma espiada nesse meu projeto web que captura a vibe do inverno. É como um mergulho virtual nessa estação incrível ❄️. Vem dar uma olhada:</ProjetoDescricao>
-        <iframe title="Inverno" src="https://kpk7zw.csb.app/"  
-        style={{
-          width: "100%",
-          height: "20vh",
-          border: "none",
-          borderRadius: "15px",
-          marginTop: "3.8rem",
-        }}> 
-        </iframe>
-        <a href="https://kpk7zw.csb.app/" target="_blank"><Button> Ver Projeto
-        </Button></a>
-      </ProjetoCard>
+          <ProjetoCard>
+            <ProjetoTitulo>Inverno</ProjetoTitulo>
+            <ProjetoDescricao>
+              Dê uma espiada nesse meu projeto web que captura a vibe do
+              inverno. É como um mergulho virtual nessa estação incrível ❄️. Vem
+              dar uma olhada:
+            </ProjetoDescricao>
+            {/* <iframe
+              title="Inverno"
+              src="https://kpk7zw.csb.app/"
+              style={{
+                width: "100%",
+                height: "20vh",
+                border: "none",
+                borderRadius: "15px",
+                marginTop: "3.8rem",
+              }}
+            ></iframe> */}
+            <a href="https://kpk7zw.csb.app/" target="_blank">
+              <Button> Ver Projeto</Button>
+            </a>
+          </ProjetoCard>
 
-      <ProjetoCard>
-        <ProjetoTitulo>Disney</ProjetoTitulo>
-        <ProjetoDescricao>Um projeto de página web inspirado na Disney. Explore filmes e séries com pôsteres encantadores. Navegue pelo menu e mergulhe na magia!✨🎬</ProjetoDescricao>
-        <iframe title="Disney" src="https://3qk2gv-5000.csb.app/"  
-        style={{
-          width: "100%",
-          height: "20vh",
-          border: "none",
-          borderRadius: "15px",
-          marginTop: "3.8rem",
-        }}> 
-        </iframe>
-        <a href="https://3qk2gv-5000.csb.app/" target="_blank"><Button> Ver Projeto
-        </Button></a>
-      </ProjetoCard>
+          <ProjetoCard>
+            <ProjetoTitulo>Disney</ProjetoTitulo>
+            <ProjetoDescricao>
+              Um projeto de página web inspirado na Disney. Explore filmes e
+              séries com pôsteres encantadores. Navegue pelo menu e mergulhe na
+              magia!✨🎬
+            </ProjetoDescricao>
+            {/* <iframe
+              title="Disney"
+              src="https://3qk2gv-5000.csb.app/"
+              style={{
+                width: "100%",
+                height: "20vh",
+                border: "none",
+                borderRadius: "15px",
+                marginTop: "3.8rem",
+              }}
+            ></iframe> */}
+            <a href="https://github.com/pamialvs/landing_page_disney.git" target="_blank">
+              <Button> Ver Projeto</Button>
+            </a>
+          </ProjetoCard>
 
-      <ProjetoCard>
-        <ProjetoTitulo>Fantastika</ProjetoTitulo>
-        <ProjetoDescricao>Landing page de uma clínica pet 🐾 desenvolvida por mim durante o curso do Vai na Web! 🚀</ProjetoDescricao>
-        <iframe title="Fantastika" src="https://v4xt32.csb.app/"  
-        style={{
-          width: "100%",
-          height: "20vh",
-          border: "none",
-          borderRadius: "15px",
-          marginTop: "3.8rem",
-        }}> 
-        </iframe>
-        <a href="https://v4xt32.csb.app/" target="_blank"><Button> Ver Projeto
-        </Button></a>
-      </ProjetoCard>
-      </ProjetosGrid>
-    </ProjetosContainer>
+          <ProjetoCard>
+            <ProjetoTitulo>Fantastika</ProjetoTitulo>
+            <ProjetoDescricao>
+              Landing page de uma clínica pet 🐾 desenvolvida por mim durante o
+              curso do Vai na Web! 🚀
+            </ProjetoDescricao>
+            {/* <iframe
+              title="Fantastika"
+              src="https://v4xt32.csb.app/"
+              style={{
+                width: "100%",
+                height: "20vh",
+                border: "none",
+                borderRadius: "15px",
+                marginTop: "3.8rem",
+              }}
+            ></iframe> */}
+            <a href="https://v4xt32.csb.app/" target="_blank">
+              <Button> Ver Projeto</Button>
+            </a>
+          </ProjetoCard>
+        </ProjetosGrid>
+      </ProjetosContainer>
     </>
   );
 };

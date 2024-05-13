@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Avatar2 from "../assets/avatar2.png";
 import HTML from "../assets/html-5_5968267.png";
 import CSS from "../assets/css-3_5968242.png";
@@ -60,7 +60,7 @@ font-family: 'Montserrat', sans-serif;
 `;
 const Card = styled.div`
   animation: ${fadeIn} 3s ease-in-out; 
-  width: 50vw;
+  width: 30vw;
   height: 60vh;
   padding: 20px 10px;
   border-radius: 10px;
@@ -79,7 +79,7 @@ const Card = styled.div`
 const TituloHabilidades = styled.h2`
   font-size: 38px;
   text-align: center;
-  color: #1B1B3A;
+  color: #1b1b3a;
   margin: 2rem;
 `;
 
@@ -88,8 +88,7 @@ const ImagensContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   height: 100vh;
-
-  `;
+`;
 
 const CardImage = styled.figure`
 width: 10vw;
@@ -109,106 +108,100 @@ padding: 2rem;
 `;
 
 const Imagem = styled.img`
-width: 75px;
-height: auto;
-margin-left: 35px;
-
+  width: 75px;
+  height: auto;
+  margin-left: 35px;
 `;
-
-
 
 function Sobre() {
   const [imagens] = useState([
-		{
-			imagem: HTML,
-			descricao: "HTML5"
-		
-		},
-		{
-			imagem: CSS,
-			descricao: "CSS"
-		},
-		{
-			imagem: JS,
-			descricao: "JavaScript"
-		},
-		{
-			imagem: ReactImg,
-			descricao: "React"
-		},
-		{
-			imagem: Styled,
-			descricao: "Styled Components"
-		},
-		{
-			imagem: Sass,
-			descricao: "Sass"
-		},
+    {
+      imagem: HTML,
+      descricao: "HTML5",
+    },
+    {
+      imagem: CSS,
+      descricao: "CSS",
+    },
+    {
+      imagem: JS,
+      descricao: "JavaScript",
+    },
+    {
+      imagem: ReactImg,
+      descricao: "React",
+    },
+    {
+      imagem: Styled,
+      descricao: "Styled Components",
+    },
+    {
+      imagem: Sass,
+      descricao: "Sass",
+    },
 
-        {
-			imagem: Bootstrap,
-			descricao: "Bootstrap"
-		},
-        {
-			imagem: Git,
-			descricao: "Git"
-		},
-        {
-			imagem: VSCODE,
-			descricao: "Visual Studio Code"
-		},
+    {
+      imagem: Bootstrap,
+      descricao: "Bootstrap",
+    },
+    {
+      imagem: Git,
+      descricao: "Git",
+    },
+    {
+      imagem: VSCODE,
+      descricao: "Visual Studio Code",
+    },
 
-        {
-			imagem: Java,
-			descricao: "Java"
-		},
-        {
-			imagem: SQL,
-			descricao: "My SQL"
-		},
-        {
-			imagem: PHP,
-			descricao: "PHP"
-		},
+    {
+      imagem: Java,
+      descricao: "Java",
+    },
+    {
+      imagem: SQL,
+      descricao: "My SQL",
+    },
+    {
+      imagem: PHP,
+      descricao: "PHP",
+    },
 
-		{
-			imagem: Python,
-			descricao: "Python"
-		},
-  
-	]);
-	
+    {
+      imagem: Python,
+      descricao: "Python",
+    },
+  ]);
 
   return (
     <SobreContainer>
-		<section className="primeiraSessaoSobre">
-      <figure>
-        <img src={Avatar2} alt="Meu avatar"/>
-      </figure>
+      <section className="primeiraSessaoSobre">
+        <figure>
+          <img src={Avatar2} alt="Meu avatar" />
+        </figure>
         <Card>
-        <h1>Sobre mim - Estudos e Experiências</h1>
+          <h1>Sobre mim - Estudos e Experiências</h1>
           <p>
-          Olá! 🌟
-          Me chamo Pâmela, tenho 17 anos e meu fascínio pela programação começou aos 15 anos. Estou atualmente no último ano do curso técnico em informática e do ensino médio no IFPB, onde tive a oportunidade de realizar um estágio e colocar em prática todos os aprendizados adquiridos como técnico de informática. Até então essa foi minha única experiência profissional.
-          Além disso, estou finalizando o curso de Desenvolvimento Front-end pelo VaiNaWeb. Meu próximo passo é cursar Ciência da Computação, pois acredito que essa jornada será fundamental para aprofundar meu conhecimento e contribuir de forma ainda mais significativa para o mundo da tecnologia.
-          A busca constante pelo aprendizado é minha maior motivação, e estou sempre aberta para absorver conhecimento e enfrentar novos desafios. 💻✨
+            Olá! 🌟 Me chamo Pâmela, tenho 17 anos e meu fascínio pela
+            programação começou aos 15 anos. Sou técnica em informática e
+            atualmente estou cursando Ciência da Computação. Além disso, fiz um
+            curso de Desenvolvimento Front-end pelo VaiNaWeb. A busca constante
+            pelo aprendizado é minha maior motivação, e estou sempre aberta para
+            absorver conhecimento e enfrentar novos desafios. 💻✨
           </p>
         </Card>
-        </section>
+      </section>
 
-		<TituloHabilidades>Minhas Habilidades</TituloHabilidades>
-	
-		<ImagensContainer>
-		{imagens.map((item) => (
+      <TituloHabilidades>Minhas Habilidades</TituloHabilidades>
+
+      <ImagensContainer>
+        {imagens.map((item) => (
           <CardImage>
             <Imagem src={item.imagem} alt="" />
             <figcaption>{item.descricao}</figcaption>
           </CardImage>
         ))}
-		</ImagensContainer>
-
+      </ImagensContainer>
     </SobreContainer>
-
   );
 }
 

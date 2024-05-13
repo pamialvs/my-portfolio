@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Avatar from "../assets/meuavatar.png";
 import Instagram from "../assets/instagram-logo.png";
 import GitHub from "../assets/github-logo.png";
@@ -19,57 +19,60 @@ const fadeIn = keyframes`
 `;
 
 const InicioContainer = styled.main`
-    min-height: 100vh;
-    display: flex;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 142, 203, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    color: white;
-   
-
-h1, p {
-  font-family: 'Montserrat', sans-serif;
-  margin-left: 2.4rem;
-}
-
-.avatar {
-  img {
-    margin-top: 12rem;
-    width: 22rem;
-    border-radius: 25%;
-    animation: ${fadeIn} 3s ease-in-out; 
-  }
-}
-
-.primeiraSessao {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 142, 203, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
 
-
-  h1 {
-    font-size: 2.5rem;
-    color: #1B1B3A;
-    animation: ${fadeIn} 3s ease-in-out; 
-  }
-
+  h1,
   p {
-    margin-right: 2rem;
-    font-size: 1.5rem;
-    animation: ${fadeIn} 3s ease-in-out; 
+    font-family: "Montserrat", sans-serif;
+    margin-left: 2.4rem;
   }
 
-  figure {
-    display: flex;
-    align-items: center;
-    animation: ${fadeIn} 3s ease-in-out; 
-    margin-top: 3rem;
-
+  .avatar {
     img {
-      width: 2.3rem;
-      margin-right: 1.5rem;
+      margin-top: 12rem;
+      width: 22rem;
+      border-radius: 25%;
+      animation: ${fadeIn} 3s ease-in-out;
     }
   }
-}
 
+  .primeiraSessao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 2.5rem;
+      color: #1b1b3a;
+      animation: ${fadeIn} 3s ease-in-out;
+    }
+
+    p {
+      margin-right: 2rem;
+      font-size: 1.5rem;
+      animation: ${fadeIn} 3s ease-in-out;
+    }
+
+    figure {
+      display: flex;
+      align-items: center;
+      animation: ${fadeIn} 3s ease-in-out;
+      margin-top: 3rem;
+
+      img {
+        width: 2.3rem;
+        margin-right: 1.5rem;
+      }
+    }
+  }
 `;
 
 const gradientAnimation = keyframes`
@@ -87,7 +90,7 @@ const Button = styled(Link)`
   position: relative;
   border: none;
   font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   width: 10em;
   height: 2.3em;
@@ -105,7 +108,7 @@ const Button = styled(Link)`
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: -5px;
     left: -5px;
@@ -127,7 +130,6 @@ const Button = styled(Link)`
   }
 `;
 
-
 const Inicio = () => {
   return (
     <InicioContainer>
@@ -138,18 +140,28 @@ const Inicio = () => {
       <section class="primeiraSessao" id="inicio">
         <h1>Bem-vindos ao Meu Portfólio!</h1>
         <p>
-        Olá! Me chamo Pâmela Wallesca, uma entusiasta do desenvolvimento dedicada a criar experiências excepcionais na web. Tenho paixão por jogos 🎮, amo uma boa música, principalmente Rock 🤟🏽, sou fã de diversos filmes e séries, e mantenho um amor contínuo pela leitura. Estou sempre em busca de aprendizado e novos desafios!
+          Olá! Me chamo Pâmela, uma entusiasta do desenvolvimento
+          dedicada a criar experiências excepcionais na web. Tenho paixão por
+          jogos 🎮, amo uma boa música, principalmente Rock 🤟🏽, sou fã de
+          diversos filmes e séries, e mantenho um amor contínuo pela leitura.
+          Estou sempre em busca de aprendizado e novos desafios!
         </p>
         <Button to="/sobre">Mais sobre mim </Button>
-        
+
         <figure>
-          <a href="https://instagram.com/pamialvs?igshid=M2RkZGJiMzhjOQ%3D%3D" target="_blank" >
+          <a
+            href="https://instagram.com/pamialvs?igshid=M2RkZGJiMzhjOQ%3D%3D"
+            target="_blank"
+          >
             <img src={Instagram} alt="Instagram" />
           </a>
-          <a href="https://github.com/pamialvs" target="_blank" >
+          <a href="https://github.com/pamialvs" target="_blank">
             <img src={GitHub} alt="GitHub" />
           </a>
-          <a href="https://www.linkedin.com/in/p%C3%A2mela-fernandes-59baaa272" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/p%C3%A2mela-fernandes-59baaa272"
+            target="_blank"
+          >
             <img src={Linkedin} alt="Linkedin" />
           </a>
           <a href="mailto: pamelawallescaf@gmail.com" target="_blank">
@@ -157,9 +169,8 @@ const Inicio = () => {
           </a>
         </figure>
       </section>
-      </InicioContainer >
-
-    );
+    </InicioContainer>
+  );
 };
 
 export default Inicio;
