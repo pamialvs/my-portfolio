@@ -181,7 +181,7 @@ function Sobre() {
         <Card>
           <h1>Sobre mim - Estudos e Experiências</h1>
           <p>
-            Olá! 🌟 Me chamo Pâmela, tenho 17 anos e meu fascínio pela
+            Olá! 🌟 Me chamo Pâmela, tenho 18 anos e meu fascínio pela
             programação começou aos 15 anos. Sou técnica em informática e
             atualmente estou cursando Ciência da Computação. Além disso, fiz um
             curso de Desenvolvimento Front-end pelo VaiNaWeb. A busca constante
